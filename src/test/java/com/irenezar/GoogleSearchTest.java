@@ -26,7 +26,6 @@ public class GoogleSearchTest extends WebDriverTestBase {
         //Finds first link with specified result
         WebElement seleniumLink = driver.findElement(By.xpath(".//*[@id='rso']/div/div/div[1]/div/h3/a"));
         //Verifies a result
-
         assertEquals(seleniumLink.getText().contains("Selenium"), true);
     }
 
